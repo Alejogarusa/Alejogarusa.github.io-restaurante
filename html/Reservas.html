@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reservas La torre di pisa</title>
+    <meta charset="UTF-8" />
+    <link href="../css/reservas.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body>
+    <header>
+        <a title="Logotipo" href="../html/index.html"><img src="../img/La torre di pissa.png" alt="Logotipo" width="400" title="logotipo"></a>
+        <nav>
+            <div class='wifeo_conteneur_menu'>
+                <div class='wifeo_rubrique'><a href='../html/Ubicacion.html'>Ubicaci&oacute;n</a><span>Ubicaci&oacute;n</span>
+                    <div class='wifeo_sousmenu'></div>
+                </div>
+                <div class='wifeo_rubrique'><a href='../html/Menu.html'>Men&uacute;</a><span>Men&uacute;</span>
+                    <div class='wifeo_sousmenu'></div>
+                </div>
+                <div class='wifeo_rubrique'><a href='../html/Galeria.html'>Galer&iacute;a</a><span>Galer&iacute;a</span>
+                    <div class='wifeo_sousmenu'></div>
+                </div>
+                <div class='wifeo_rubrique'><a href='../html/Reservas.html'>Reservas</a><span>Reservas</span>
+                    <div class='wifeo_sousmenu'></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form method="post" onSubmit="return validateForm();">
+            <div class="reservar">Reservar Mesa</div>
+            <div class="encantados">Estaremos encantados de reservar una mesa para ti en nuestro restaurante!</div>
+            <div class="nombre" >Nombre<span> *</span><br/>
+                <input type="text" required/>
+            </div>
+            <div class="telefono">Teléfono<br/>
+                <input type="text">
+            </div>
+            <div class="email">Email<br/>
+                <input type="text"> 
+            </div>
+            <div class="Fecha">Fecha<span> *</span><br/>
+                <input class="fecha" type="date" required/>
+            </div>
+            <div class="hora" required>Hora<span> *</span><br/>
+                <input type="text" required/>
+            </div>
+            <div class="comensales">Número de comensales<span>*</span><br/>
+                <select id="data_8" name="data_8" required><option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>10+ (Especificar en Comentarios)</option>
+                </select>
+            </div>
+            <div>Comentarios / Solicitudes adicionales<br/>
+                <textarea class = "comentarios" ></textarea>
+            </div>
+            <div>
+                <input class="enviar" name="button" value="Enviar" type="submit"/>
+            </div>
+            <p>* Elementos obligatorios</p>
+        </form>
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+
+</html>
