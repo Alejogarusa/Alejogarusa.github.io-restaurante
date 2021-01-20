@@ -49,20 +49,17 @@ body{
 
 .wifeo_rubrique:hover > .wifeo_sousmenu{opacity:1;top:40px;visibility:visible}
 
-
-
-
-
-
 main
 {
-	display: flex;
+	display: flex; /*Si pones display grid vas a usar la rejilla y después hay que usar otras propiedades. Para que funcione justify-content y align items tienes que poner display: flex*/
+	/*position: absolute;*/ /*No tiene sentido si usas un display*/
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 10px;
 	flex-direction: column;
-	width: 100vw;
-	
+	/*margin-top: 10px;*/
+	width: 100vw; /*Estaba a 0, si vale 0 lo que hay en su interior, las imágenes, no se veían*/
+	/*row-gap: 15px;*/ /*Esto también es para la rejilla*/
+}
 }
 
 .galeria
